@@ -1,0 +1,24 @@
+    1  git config --global user.name sasha
+    2  git config --global user.email olexandrbabinecs@gmail.com
+    3  git clone https://github.com/olexandrbabinecs/HW_10.git
+    4  cd HW_10
+    5  touch text_ignore.txt
+    6  nano .gitignore
+    7  git status
+    8  git add .
+    9  git commit -m "task1"
+   10  touch main_text.txt
+   11  git add .
+   12  git commit -m "task2"
+   13  git checkout -b develop
+   14  touch develop_test.txt
+   15  git add .
+   16  git commit -m "task3.1"
+   17  nano develop_test.txt 
+   18  git status
+   19  git add .
+   20  git commit -m "task3.2"
+   21  git checkout main
+   22  git merge develop
+   23  git log
+   24  history > command_list.csv
